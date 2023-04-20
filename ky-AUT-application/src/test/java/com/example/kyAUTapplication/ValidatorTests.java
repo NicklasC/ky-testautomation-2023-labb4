@@ -24,7 +24,7 @@ class ValidatorTests {
     @Test
     void phoneNumberLengthLessThenSixIsNotOk() {
         //Start phonenumber with 0 as any phonenumber, no matter the length, is invalid if it does not start with 0.
-        Assertions.assertEquals(true, Validator.isPhoneNumberValid("03355"));
+        Assertions.assertEquals(false, Validator.isPhoneNumberValid("03355"));
     }
 
     @DisplayName("Phone number with 6 digits is OK")
