@@ -4,7 +4,7 @@ package com.example.kyAUTapplication;
 public class Validator {
 
     public static boolean isPhoneNumberValid(String phoneNumber) {
-        if (phoneNumber.startsWith("0")) {
+        if (!phoneNumber.startsWith("0")) {
             return false;
         }
         if (phoneNumber.length() < 6 || phoneNumber.length() > 10) {
